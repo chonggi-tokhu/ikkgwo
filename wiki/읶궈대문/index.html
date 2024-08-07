@@ -13,7 +13,7 @@
         function htmlfunc(str) {
             return str.replaceAll(`&quot;`, `"`).replaceAll(`&apos;`, `'`).replaceAll(`&lt;`, `<`).replaceAll(`&gt;`, `>`).replaceAll(`\n`, `\n`);
         }
-        var wiki_rule2 = rule();
+        var wiki_rule2 = rule;
         function wiki_rule3(str, thisdocname) {
             var newstr = wiki_rule2(str);
             return { rtv: wiki_rule2(newstr.rtv).rtv, nowiki: newstr.nowiki };
