@@ -174,7 +174,7 @@ async function using_fetch(link_addr) {
                         }
                     },
                     pieceTheme: function pieceTheme(piece) {
-                        return '/ColourgreyShorterJS/fairychess/chess/files/img/chesspieces/wikipedia/' + piece + '.png';
+                        return '/ikkgwo/files/img/chess/' + piece + '.png';
                     },
                     position: (function () {
                         return newche.fen()
@@ -552,7 +552,7 @@ async function using_fetch(link_addr) {
                         }
                     },
                     pieceTheme: function pieceTheme(piece) {
-                        return '/ColourgreyShorterJS/fairychess/chess/files/img/chesspieces/wikipedia/' + piece + '.png';
+                        return '/ikkgwo/files/img/chess/' + piece + '.png';
                     },
                     position: (function () {
                         return newche.fen()
