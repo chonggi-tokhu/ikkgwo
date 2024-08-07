@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-<script src="/ikkgwo/files/wiki_rule.js"></script>
+<script src="/ikkgwo/files/js/ColourgreyShorterCSSJS.js"></script>
+<script src="/ikkgwo/files/js/wiki_rule.js"></script>
 <script src="/ikkgwo/files/js/to_html.js"></script>
 </head>
 <body>
@@ -100,7 +101,7 @@
                 .then((result) => {
                     // Do things with result
                     //console.log(result);
-                    var template= '<div class="body"> <div class="wiki-content"> <h2>@@docname@@</h2> <div class="document">@@doc@@</div> </div> \x3Cscript src="/ikkgwo/files/js/chess2.js">\x3C/script> \x3Cscript src="/ikkgwo/files/js/chessboard-1.0.0.min.js">\x3C/script> <link rel="stylesheet" href="/ikkgwo/files/css/ColourgreyShorter.css" /> \x3Cscript src="/ikkgwo/files/js/ColourgreyShorterCSSJS.js">\x3C/script> \x3Cscript src="/ikkgwo/files/js/bootstrap.bundle.min.js">\x3C/script> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css" /> \x3Cscript src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js">\x3C/script> \x3Cscript src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js">\x3C/script> \x3Cscript src="/ikkgwo/files/wiki_rule.js">\x3C/script> \x3Cscript src="/ikkgwo/files/js/to_html.js">\x3C/script> \x3Cscript src="/ikkgwo/files/js/pgnreader.js">\x3C/script> \x3Cscript src="https://code.jquery.com/jquery-3.6.3.js">\x3C/script> \x3Cscript src="/ikkgwo/files/js/to_html.js">\x3C/script> </div>';
+                    var template= '<div class="body"> <div class="wiki-content"> <h2>@@docname@@</h2> <div class="document">@@doc@@</div> </div> \x3Cscript src="/ikkgwo/files/js/chess2.js">\x3C/script> \x3Cscript src="/ikkgwo/files/js/chessboard-1.0.0.min.js">\x3C/script> <link rel="stylesheet" href="/ikkgwo/files/css/ColourgreyShorter.css" /> \x3Cscript src="/ikkgwo/files/js/ColourgreyShorterCSSJS.js">\x3C/script> \x3Cscript src="/ikkgwo/files/js/bootstrap.bundle.min.js">\x3C/script> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css" /> \x3Cscript src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js">\x3C/script> \x3Cscript src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js">\x3C/script> \x3Cscript src="/ikkgwo/files/js/wiki_rule.js">\x3C/script> \x3Cscript src="/ikkgwo/files/js/to_html.js">\x3C/script> \x3Cscript src="/ikkgwo/files/js/pgnreader.js">\x3C/script> \x3Cscript src="https://code.jquery.com/jquery-3.6.3.js">\x3C/script> \x3Cscript src="/ikkgwo/files/js/to_html.js">\x3C/script> </div>';
                     var template1=template.replace('@@docname@@', pathname.split('/')[pathname.split('/').length - 1]);
                     template1=template1.replace('@@doc@@',wiki_rule(wiki_rule(result)));
                     document.querySelector('.div_0').innerHTML=template1;
