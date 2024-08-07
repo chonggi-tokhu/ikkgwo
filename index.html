@@ -9,7 +9,7 @@
     <script src="/ikkgwo/files/js/wiki_rule.js"></script>
 </head>
 
-<body>
+<body><script src="/ikkgwo/files/js/chess2.js"></script> <script src="/ikkgwo/files/js/chessboard-1.0.0.min.js"></script> <link rel="stylesheet" href="/ikkgwo/files/css/ColourgreyShorter.css" /> <script src="/ikkgwo/files/js/ColourgreyShorterJS.js"></script> <script src="/ikkgwo/files/js/bootstrap.bundle.min.js"></script> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css" /> <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script> <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js"></script> <script src="/ikkgwo/files/js/wiki_rule.js"></script> <script src="/ikkgwo/files/js/to_html.js"></script> <script src="/ikkgwo/files/js/pgnreader.js"></script> <script src="https://code.jquery.com/jquery-3.6.3.js"></script> <script src="/ikkgwo/files/js/to_html.js"></script>
     <div class="body_0"></div>
     <script>
         function htmlfunc(str) {
@@ -103,7 +103,7 @@
                 .then((result) => {
                     // Do things with result
                     //console.log(result);
-                    var template = '<div class="body"> <div class="wiki-content"> <h2>@@docname@@</h2> <div class="document">@@doc@@</div> </div> <script src="/ikkgwo/files/js/chess2.js"></script> <script src="/ikkgwo/files/js/chessboard-1.0.0.min.js"></script> <link rel="stylesheet" href="/ikkgwo/files/css/ColourgreyShorter.css" /> <script src="/ikkgwo/files/js/ColourgreyShorterJS.js"></script> <script src="/ikkgwo/files/js/bootstrap.bundle.min.js"></script> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css" /> <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script> <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js"></script> <script src="/ikkgwo/files/js/wiki_rule.js"></script> <script src="/ikkgwo/files/js/to_html.js"></script> <script src="/ikkgwo/files/js/pgnreader.js"></script> <script src="https://code.jquery.com/jquery-3.6.3.js"></script> <script src="/ikkgwo/files/js/to_html.js"></script> </div>';
+                    var template = '<div class="body"> <div class="wiki-content"> <h2>@@docname@@</h2> <div class="document">@@doc@@</div> </div>  </div>';
                     var template1 = template.replace('@@docname@@', query0);
                     template1 = template1.replace('@@doc@@', wiki_rule(wiki_rule('[-use-rule-] ' + result)));
                     document.querySelector('.body_0').innerHTML = template1;
