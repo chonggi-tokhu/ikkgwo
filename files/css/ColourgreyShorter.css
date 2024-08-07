@@ -15597,6 +15597,223 @@ a.docname h1 {
     }
 }
 
+    chess-circle {
+        background: #02e06080;
+        border-radius: 50%;
+        width: 1.2rem;
+        height: 1.2rem;
+        display: block;
+        position: relative;
+        left: 0.875em;
+        top: 0.875em;
+    }
+
+    #players table tr td:nth-child(1) {
+        width: 220px;
+    }
+
+    #players table tr td:nth-child(2) {
+        width: 100px;
+    }
+
+    #players table tr td:nth-child(2) span {
+        text-align: center;
+        font-size: 200%;
+    }
+
+    #players table tr td:nth-child(3) {
+        width: 220px;
+    }
+
+    .chessnote {
+        position: absolute;
+        margin-left: 20px;
+        margin-top: -5px;
+        --bordercolour: #224;
+        border: 0.95px double var(--bordercolour);
+        right: 0px;
+        text-align: center;
+        font-weight: bold !important;
+        font-size: 0.80rem !important;
+        height: 1.05rem !important;
+        width: 1.05rem !important;
+        z-index: 75;
+    }
+
+    .chessnote.nsss-5 {
+        background: #ff0236;
+        color: #eff;
+        border-radius: 80%;
+        --bordercolour: #455 !important;
+    }
+
+    .chessnote.nsss-4 {
+        background: #ffb300;
+        color: #eee;
+        border-radius: 80%;
+
+        --bordercolour: #444 !important;
+
+    }
+
+    .chessnote.nsss-3 {
+        background: #fff82a;
+        color: darkslategrey;
+        border-radius: 80%;
+
+        --bordercolour: #abb !important;
+
+    }
+
+    .chessnote.nsss-2 {
+        background: #aa0caa;
+        color: #eee;
+        border-radius: 80%;
+
+        --bordercolour: #444 !important;
+
+    }
+
+    .chessnote.nsss-1 {
+        background: #2032aa;
+        color: #eef;
+        border-radius: 80%;
+
+
+        --bordercolour: #445 !important;
+    }
+
+    .chessnote.nsss-0 {
+        background: #00aabb;
+        color: #fee;
+        border-radius: 80%;
+
+
+    }
+
+    @keyframes chessnoteAnimation {
+        from {
+            fill: var(--fillcolour);
+        }
+
+        50% {
+            fill: #56789a;
+        }
+
+        to {
+            fill: var(--fillcolour);
+        }
+    }
+
+    .comment-bubble svg path.chessnote.nsss-5 {
+        fill: #ff0236;
+        --fillcolour: #ff0236;
+        animation: chessnoteAnimation 0.3s 6;
+        color: #eff;
+        border-radius: 80%;
+        --bordercolour: #455 !important;
+    }
+
+    .comment-bubble svg path.chessnote.nsss-4 {
+        fill: #ffb300;
+        --fillcolour: #ffb300;
+        animation: chessnoteAnimation 0.3s 6;
+        color: #eee;
+        border-radius: 80%;
+
+        --bordercolour: #444 !important;
+
+    }
+
+    .comment-bubble svg path.chessnote.nsss-3 {
+        fill: #fff82a;
+        --fillcolour: #fff82a;
+        animation: chessnoteAnimation 0.3s 6;
+        color: darkslategrey;
+        border-radius: 80%;
+
+        --bordercolour: #abb !important;
+
+    }
+
+    .comment-bubble svg path.chessnote.nsss-2 {
+        fill: #aa0caa;
+        --fillcolour: #aa0caa;
+        animation: chessnoteAnimation 0.3s 6;
+        color: #eee;
+        border-radius: 80%;
+
+        --bordercolour: #444 !important;
+
+    }
+
+    .comment-bubble svg path.chessnote.nsss-1 {
+        fill: #2032aa;
+        --fillcolour: #2032aa;
+        animation: chessnoteAnimation 0.3s 6;
+        color: #eef !important;
+        border-radius: 80%;
+
+
+        --bordercolour: #445 !important;
+    }
+
+    .comment-bubble svg path.chessnote.nsss-1~foreignObject div {
+        color: #eef !important;
+    }
+
+    .comment-bubble svg path.chessnote.nsss-0 {
+        fill: #00aabb;
+        --fillcolour: #00aabb;
+        animation: chessnoteAnimation 0.3s 6;
+        color: #fee;
+        border-radius: 80%;
+
+
+    }
+
+    .comment-bubble svg path.chessnote.nsss-n {
+        z-index: 0 !important;
+        position: static !important;
+        height: 0px !important;
+        width: 0px !important;
+        border: none;
+    }
+
+    .comment-bubble svg path.chessnote.nsss-0 {}
+
+    .piece-417db {
+        position: relative;
+        top: 1px;
+        right: 1px;
+    }
+
+    splitel {
+        background: #222;
+        width: 1px;
+        z-index: 1;
+        height: inherit;
+    }
+
+    .comment-bubble,
+    comment-bubble svg {
+        position: absolute;
+        bottom: 1em;
+        left: 2.25em;
+        z-index: 50;
+        visibility: visible;
+        word-break: break-all;
+    }
+
+    nav.bluenav div.container-fluid {
+        height: 4em;
+        color: #eee;
+    }
+
+    nav.bluenav .dropdown-menu.n1 {
+        box-shadow: 0.5px 0.5px 1px 1px #404040, -0.5px 0.5px 1px 1px #404040, 0.5px -0.5px 1px 1px #404040, -0.5px -0.5px 1px 1px #404040;
+        z-index: 999999 !important;
+    }
 /*! semicolons on last of each line by Colourgrey 
  * extra colours by Colourgrey
  * extra animations by Colourgrey
