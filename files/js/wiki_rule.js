@@ -1,4 +1,4 @@
-(function (gTh, wikirule) {  "object" == typeof exports && "undefined" != typeof module ? module.exports = wikirule() : "function" == typeof define && define.amd ? define(wikirule) : (gTh = "undefined" != typeof globalThis ? globalThis : gTh || self).ColourgreyShorterJS = wikirule() })(this, function () {
+(function (gTh, wikirule) {  "object" == typeof exports && "undefined" != typeof module ? module.exports = wikirule() : "function" == typeof define && define.amd ? define(wikirule) : (gTh = "undefined" != typeof globalThis ? globalThis : gTh || self).rule = wikirule() })(this, function () {
     return function (strparam) {
         function textjoin(str, from, to) {
             var nstr = new String(str);
