@@ -11,8 +11,9 @@
 <body>
     <div class="body_0"></div>
     <script src="/ikkgwo/files/js/to_html.js"></script>
+    <script src="/ikkgwo/files/js/namumark/index.js"></script>
     <script>
-        function htmlfunc(str) {
+        /*function htmlfunc(str) {
             return str.replaceAll(`&quot;`, `"`).replaceAll(`&apos;`, `'`).replaceAll(`&lt;`, `<`).replaceAll(`&gt;`, `>`).replaceAll(`\n`, `\n`);
         }
         var wiki_rule2 = rule;
@@ -35,7 +36,7 @@
                 rtv = rtv.replaceAll(`-nowiki${idx}-`, val);
             });
             return rtv.replaceAll(`/-sbo-/`, `(`).replaceAll(`/-sbc-/`, `)`);
-        }
+        }*/
         (function () {
             var pathname = decodeURI(new URL(location.href).pathname);
             var query0 = decodeURI(new URL(location.href).searchParams.get('docname'));
@@ -105,7 +106,7 @@
                     //console.log(result);
                     var template = '<div class="body"> <div class="wiki-content"> <h2>@@docname@@</h2> <div class="document">@@doc@@</div> </div>  </div>';
                     var template1 = template.replace('@@docname@@', query0);
-                    template1 = template1.replace('@@doc@@', (wiki_rule('[-use-rule-] ' + htmlfunc(result))));
+                    template1 = template1.replace('@@doc@@', parse(result)));
                     document.querySelector('.body_0').innerHTML = template1;
                 });
         })();
