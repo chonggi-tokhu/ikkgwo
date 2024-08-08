@@ -1,57 +1,27 @@
-<style>
-    .header-profile table tr td {
-        background: #fff;
-        border: 2px solid #053e72;
-    }
-</style>
-[[분류:대한제국]] <div class="header-profile"> [-header-] <table style="text-align:center;">
-        <tr>
-            <td colspan="12">조선과 남만주의 삼중 연합 제국</td>
-        </tr>
-        <tr>
-            <td colspan="4"> {img(/ikkgwo/files/img/flag_of_empire_of_korea.png)}|width=160; </td>
-            <td colspan="4"> {img()}|width=160; </td>
-        </tr>
-        <tr>
-            <td colspan="4">국기</td>
-            <td colspan="4">국장</td>
-        </tr>
-        <tr>
-            <td colspan="12">상징</td>
-        </tr>
-        <tr>
-            <td colspan="4">국가</td>
-            <td colspan="8">[[애국가]]</td>
-        </tr>
-        <tr>
-            <td colspan="12">역사</td>
-        </tr>
-        <tr>
-            <td colspan="12">조선국 건국 [[1392년]] <br> 임진왜란 [[1592년]]<br> 제국선포,[[청나라|청]]으로부터 독립 [[1776년]] 정조 즉위년 <br> 개화
-                [[1799년]] 정조 23년 <br> 입헌군주제 헌법 제정과 민주화 [[1842년]] 헌종 6~7년</td>
-        </tr>
-        <tr>
-            <td colspan="12">구성국(북쪽-남쪽)</td>
-        </tr>
-        <tr>
-            <td colspan="4">남만주 대공국</td>
-            <td colspan="4">북대한 공화국</td>
-            <td colspan="4">남대한 왕국</td>
-        </tr>
-        <tr>
-            <td colspan="12">정치</td>
-        </tr>
-        <tr>
-            <td colspan="12">정치 체제:입헌군주제,양원제,연합제국<br>정부수반: 총리<br>국가원수:황제<br>군주의 작위:황제(남대한 왕국 국왕,남만주
-                대공국 대공 겸임)</td>
-        </tr>
-        <tr>
-            <td colspan="12">인문 환경</td>
-        </tr>
-        <tr>
-            <td colspan="12">언어: 한국어 <br> 문자: 한글, 라틴문자, 한자<br>인구:약 21,000,000명<br>통행 방향:좌측통행,우측통행
-                혼재(우측통행이 일반적)<br>군대:[[대한제국군]]<br>종교:가톨릭 25%, 개신교 25%, 불교 25%, 무종교[* 유교는 종교라기보단 사상이라 유교신자도 무종교에 포함] 20%,
-                기타 5%</td>
-        </tr>
-    </table>
-</div> # 개요 # 대한제국[* 정식명칭 조선과 남만주의 삼중 연합제국]은 동아시아~동북아시아 일대에 걸쳐있는 황제국이다. 수도는 서울특별시 한성. ///
+[[분류:대한제국]]
+[목차]
+||<-3><tablealign=right><table width=450><tablebordercolor=#080808><bgcolor=#ffffff>'''{{{#080808 조선과 남만주의 연합 제국}}}'''||
+||<-2><width=50%><rowbgcolor=#f0f0f0,#1c1d1f><height=150> [[태극기|{{{#!html <img src="/ikkgwo/files/img/flag_of_empire_of_korea.png">}}}]] ||<width=50%> [[대한제국/국장|{{{#!html <img src="/ikkgwo/files/img/flag_of_empire_of_korea.png">}}}]] ||
+||<-2><width=50%><bgcolor=#ff0000> {{{#080808 '''국기''' }}} ||<width=50%><bgcolor=#0000ff> {{{#080808 '''국장'''}}} ||
+||<-3><bgcolor=#0000ff> '''{{{#ffffff 상징}}}''' ||
+||<width=25%><bgcolor=#ff0000> '''{{{#ffffff 국가}}}'''||<-2><bgcolor=#ffffff>[[애국가(대한제국)|애국가]]||
+||<-3><bgcolor=#0000ff> '''{{{#ffffff 역사}}}'''||
+||<-3><bgcolor=#ffffff> 조선국 건국 [[1392년]] [br] 임진왜란 [[1592년]][br] 제국선포,[[청나라|청]]으로부터 독립 [[1776년]] 정조 즉위년 [br] 개화 [[1799년]] 정조 23년 [br] 입헌군주제 헌법 제정과 민주화 [[1842년]] 헌종 6~7년 ||
+||<-3><bgcolor=#0000ff> '''{{{#ffffff 인문 환경}}}'''||
+||<-3><^|1><bgcolor=#ffffff><height=32> {{{#!wiki style="margin: 0 -10px -5px"
+{{{#!folding [ 펼치기 · 접기 ]
+{{{#!wiki style="margin: -6px -1px -11px"
+||<-2><tablebgcolor=#ffffff><bgcolor=#ff0000><width=20%> '''{{{#ffffff 수도}}}''' ||<-4><width=45%>[[서울특별시 한성]] ||
+||<-2><bgcolor=#ff0000><width=13%> '''{{{#fff 접경국}}}''' ||<-4>소비에트 사회주의 공화국 연방[br]중화민국 국민정부 ||
+||<-2><bgcolor=#ff0000><width=13%> '''{{{#fff 구성국}}}''' ||<-4>북쪽 - 남만주 대공국,북대한 공화국, 남대한 왕국 - 남쪽 ||}}}}}}}}} ||
+||<-3><bgcolor=#0000ff> '''{{{#ffffff 정치}}}'''||
+||<-3><^|1><bgcolor=#ffffff><height=32> {{{#!wiki style="margin: 0 -10px -5px"
+{{{#!folding [ 펼치기 · 접기 ]
+{{{#!wiki style="margin: -6px -1px -11px"
+||<-2><tablebgcolor=#ffffff><bgcolor=#ff0000><width=20%> '''{{{#ffffff 정치 체제}}}''' ||<-4><width=45%>[[입헌군주제]],양원제,연합제국 ||
+||<-2><bgcolor=#ff0000><width=13%> '''{{{#fff 정부 수반}}}''' ||<-4>총리 ||
+||<-2><bgcolor=#ff0000><width=13%> '''{{{#fff 국가원수}}}''' ||<-4>황제 ||
+||<-2><bgcolor=#ff0000><width=13%> '''{{{#fff 군주의 작위}}}''' ||<-4>황제(남대한 왕국 왕,남만주 대공국 대공 겸임) ||}}}}}}}}} ||
+
+= 개요 =
+대한제국은 동아시아~동북아시아에 걸쳐있는 황제국이다.
