@@ -1,6 +1,4 @@
-function definefunc(a, [...b], c,gTh) {
-    "object" == typeof exports && "undefined" != typeof module ? module.exports = c(((gth)=>{var rtarr=[]; for(var i = 0;i<b.length;i++){rtarr.push(gth[b[i]])} return rtarr;})(this)) : "function" == typeof define && define.amd ? define(c) : (gTh = "undefined" != typeof globalThis ? globalThis : gTh || self)[a] = c(((gth)=>{var rtarr=[]; for(var i = 0;i<b.length;i++){rtarr.push(gth[b[i]])} return rtarr; })(this))
-}
+
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -40,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-definefunc("rules", ["require", "exports"], function (require, exports) {
+define("rules", ["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.lists = exports.videos = exports.textRules = void 0;
@@ -66,7 +64,7 @@ definefunc("rules", ["require", "exports"], function (require, exports) {
     exports.lists = ["*", "1.", "a.", "A.", "i.", 'I.'];
     exports.default = rules;
 });
-definefunc("tokenizer", ["require", "exports", "rules"], function (require, exports, rules_1) {
+define("tokenizer", ["require", "exports", "rules"], function (require, exports, rules_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.Tokenizer = exports.Token = void 0;
@@ -251,7 +249,7 @@ definefunc("tokenizer", ["require", "exports", "rules"], function (require, expo
     }());
     exports.Tokenizer = Tokenizer;
 });
-definefunc("parser", ["require", "exports", "rules"], function (require, exports, rules_3) {
+define("parser", ["require", "exports", "rules"], function (require, exports, rules_3) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.Parser = exports.Node = void 0;
@@ -1035,7 +1033,7 @@ definefunc("parser", ["require", "exports", "rules"], function (require, exports
     }());
     exports.Parser = Parser;
 });
-definefunc("renderer", ["require", "exports", "parser", "index", "highlight.js"], function (require, exports, parser_1, index_1, highlight_js_1) {
+define("renderer", ["require", "exports", "parser", "index", "highlight.js"], function (require, exports, parser_1, index_1, highlight_js_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.Renderer = void 0;
@@ -1504,7 +1502,7 @@ definefunc("renderer", ["require", "exports", "parser", "index", "highlight.js"]
     }());
     exports.Renderer = Renderer;
 });
-definefunc("index", ["require", "exports", "tokenizer", "parser", "renderer"], function (require, exports, tokenizer_1, parser_2, renderer_1) {
+define("index", ["require", "exports", "tokenizer", "parser", "renderer"], function (require, exports, tokenizer_1, parser_2, renderer_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.parser = exports.tokenizer = exports.Node = exports.Token = exports.Renderer = exports.Parser = exports.Tokenizer = void 0;
