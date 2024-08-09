@@ -1,5 +1,5 @@
 function definefunc(a, [...b], c) {
-    "object" == typeof exports && "undefined" != typeof module ? module.exports = c(b) : "function" == typeof define && define.amd ? define(c) : (gTh = "undefined" != typeof globalThis ? globalThis : gTh || self)[a] = c(b)
+    "object" == typeof exports && "undefined" != typeof module ? module.exports = c((()=>{var rtarr=[]; for(var i = 0;i<b.length;i++){rtarr.push(this[b[i]])} return rtarr; })()) : "function" == typeof define && define.amd ? define(c) : (gTh = "undefined" != typeof globalThis ? globalThis : gTh || self)[a] = c((()=>{var rtarr=[]; for(var i = 0;i<b.length;i++){rtarr.push(this[b[i]])} return rtarr; })())
 }
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
