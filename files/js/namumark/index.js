@@ -1,3 +1,6 @@
+function definefunc(a, [...b], c) {
+    "object" == typeof exports && "undefined" != typeof module ? module.exports = c(b) : "function" == typeof define && define.amd ? define(c) : (gTh = "undefined" != typeof globalThis ? globalThis : gTh || self)[a] = c(b)
+}
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -11,8 +14,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    var _ = { label: 0, sent: function () { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function () { return this; }), g;
     function verb(n) { return function (v) { return step([n, v]); }; }
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
@@ -37,7 +40,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-define("rules", ["require", "exports"], function (require, exports) {
+definefunc("rules", ["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.lists = exports.videos = exports.textRules = void 0;
@@ -63,7 +66,7 @@ define("rules", ["require", "exports"], function (require, exports) {
     exports.lists = ["*", "1.", "a.", "A.", "i.", 'I.'];
     exports.default = rules;
 });
-define("tokenizer", ["require", "exports", "rules"], function (require, exports, rules_1) {
+definefunc("tokenizer", ["require", "exports", "rules"], function (require, exports, rules_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.Tokenizer = exports.Token = void 0;
@@ -248,7 +251,7 @@ define("tokenizer", ["require", "exports", "rules"], function (require, exports,
     }());
     exports.Tokenizer = Tokenizer;
 });
-define("parser", ["require", "exports", "rules"], function (require, exports, rules_3) {
+definefunc("parser", ["require", "exports", "rules"], function (require, exports, rules_3) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.Parser = exports.Node = void 0;
@@ -1032,7 +1035,7 @@ define("parser", ["require", "exports", "rules"], function (require, exports, ru
     }());
     exports.Parser = Parser;
 });
-define("renderer", ["require", "exports", "parser", "index", "highlight.js"], function (require, exports, parser_1, index_1, highlight_js_1) {
+definefunc("renderer", ["require", "exports", "parser", "index", "highlight.js"], function (require, exports, parser_1, index_1, highlight_js_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.Renderer = void 0;
@@ -1044,9 +1047,13 @@ define("renderer", ["require", "exports", "parser", "index", "highlight.js"], fu
             this.findPage = function () { return null; };
             this.findImage = function () { return null; };
             this.getURL = function (type, name) { return (type === 'link' ? '/wiki/' : '/files/') + name; };
-            this.pageCount = function () { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                return [2 /*return*/, 0];
-            }); }); };
+            this.pageCount = function () {
+                return __awaiter(_this, void 0, void 0, function () {
+                    return __generator(this, function (_a) {
+                        return [2 /*return*/, 0];
+                    });
+                });
+            };
             this.categories = [];
             this.backlinks = [];
             this.footnoteIds = [];
@@ -1231,9 +1238,9 @@ define("renderer", ["require", "exports", "parser", "index", "highlight.js"], fu
                                 return [2 /*return*/, "<a href=\"".concat(this.disableQuot(this.getURL('link', node.link)), "\" class=\"wiki-link not-exist\">").concat(node.link, "</a>")];
                             }
                             return [2 /*return*/, "<img src=\"".concat(this.getURL('image', image.url), "\" style=\"").concat(this.disableQuot((node.param['align'] ? 'text-align: ' + node.param['align'] : '') + ';' +
-                                    (node.param['bgcolor'] ? 'background-color: ' + node.param['bgcolor'] : '') + ';' +
-                                    (node.param['border-radius'] ? 'border-radius: ' + node.param['bgcolor'] : '') + ';' +
-                                    (node.param['rendering'] ? 'image-rendering: ' + node.param['bgcolor'] : '') + ';'), "\" width=\"").concat(node.param['width'] ? this.disableQuot(node.param['width']) : image.width, "\" height=\"").concat(node.param['height'] ? this.disableQuot(node.param['height']) : image.height, "\" />")];
+                                (node.param['bgcolor'] ? 'background-color: ' + node.param['bgcolor'] : '') + ';' +
+                                (node.param['border-radius'] ? 'border-radius: ' + node.param['bgcolor'] : '') + ';' +
+                                (node.param['rendering'] ? 'image-rendering: ' + node.param['bgcolor'] : '') + ';'), "\" width=\"").concat(node.param['width'] ? this.disableQuot(node.param['width']) : image.width, "\" height=\"").concat(node.param['height'] ? this.disableQuot(node.param['height']) : image.height, "\" />")];
                         case 24:
                             _p = "<b>".concat;
                             return [4 /*yield*/, this.getHTML(node.items)];
@@ -1299,7 +1306,7 @@ define("renderer", ["require", "exports", "parser", "index", "highlight.js"], fu
                             return [4 /*yield*/, this.getHTML(node.items)];
                         case 38:
                             _w.apply(_v, [(_7.content = _8.sent(),
-                                    _7)]);
+                                _7)]);
                             return [2 /*return*/, "<sup id=\"fn-".concat(encodeURIComponent(id), "\"><a href=\"#rfn-").concat(encodeURIComponent(id), "\">[").concat(name_2, "]</a></sup>")];
                         case 39:
                             _x = "<blockquote class=\"wiki-quote\">".concat;
@@ -1350,7 +1357,7 @@ define("renderer", ["require", "exports", "parser", "index", "highlight.js"], fu
                             _1 = "<ruby>".concat;
                             return [4 /*yield*/, this.getHTML(node.items)];
                         case 56: return [2 /*return*/, _1.apply("<ruby>", [_8.sent(), "<rp>(</rp><rt>"]).concat(node.param['color'] ? '<span style="color: ' + this.disableQuot(node.param['color']) + '">' + (node.param['ruby'] || '') + '</span>'
-                                : node.param['ruby'] || '', "</rt><rp>)</rp></ruby>")];
+                            : node.param['ruby'] || '', "</rt><rp>)</rp></ruby>")];
                         case 57:
                             {
                                 return [2 /*return*/, "<katex data-latex=\"".concat(this.disableQuot(node.value), "\">").concat(this.disableTag(node.value), "</katex>")];
@@ -1364,15 +1371,15 @@ define("renderer", ["require", "exports", "parser", "index", "highlight.js"], fu
                         case 59:
                             {
                                 return [2 /*return*/, '<section class="wiki-toc" id="toc"><h2>목차</h2>' + this.headers.map(function (header) {
-                                        return "<div class=\"wiki-toc-item wiki-toc-indent-".concat(header.size, "\"><a href=\"#s-").concat(header.id, "\">").concat(header.count, ".</a> ").concat(header.name, "</div>");
-                                    }).join('') + '</section>'];
+                                    return "<div class=\"wiki-toc-item wiki-toc-indent-".concat(header.size, "\"><a href=\"#s-").concat(header.id, "\">").concat(header.count, ".</a> ").concat(header.name, "</div>");
+                                }).join('') + '</section>'];
                             }
                             _8.label = 60;
                         case 60:
                             {
                                 return [2 /*return*/, '<section class="wiki-footnotes"><ol>' + this.footnotes.map(function (footnote) {
-                                        return "<li id=\"rfn-".concat(encodeURIComponent(footnote.id), "\"><a href=\"#fn-").concat(encodeURIComponent(footnote.id), "\">[").concat(footnote.name, "]</a> <span>").concat(footnote.content, "</span></li>");
-                                    }).join('') + '</ol></section>'];
+                                    return "<li id=\"rfn-".concat(encodeURIComponent(footnote.id), "\"><a href=\"#fn-").concat(encodeURIComponent(footnote.id), "\">[").concat(footnote.name, "]</a> <span>").concat(footnote.content, "</span></li>");
+                                }).join('') + '</ol></section>'];
                             }
                             _8.label = 61;
                         case 61:
@@ -1397,7 +1404,8 @@ define("renderer", ["require", "exports", "parser", "index", "highlight.js"], fu
                             _8.label = 65;
                         case 65:
                             _5 = _2 + (_3) + '<tbody>';
-                            return [4 /*yield*/, Promise.all(node.items.map(function (row) { return __awaiter(_this, void 0, void 0, function () {
+                            return [4 /*yield*/, Promise.all(node.items.map(function (row) {
+                                return __awaiter(_this, void 0, void 0, function () {
                                     var _a;
                                     var _this = this;
                                     return __generator(this, function (_b) {
@@ -1405,7 +1413,8 @@ define("renderer", ["require", "exports", "parser", "index", "highlight.js"], fu
                                             case 0:
                                                 _a = "<tr style=\"".concat(this.disableQuot((row.param['bgcolor'] ? 'background-color: ' + row.param['bgcolor'] + ';' : '') +
                                                     (row.param['color'] ? 'color: ' + row.param['color'] + ';' : '')), "\">");
-                                                return [4 /*yield*/, Promise.all(row.items.map(function (cell) { return __awaiter(_this, void 0, void 0, function () {
+                                                return [4 /*yield*/, Promise.all(row.items.map(function (cell) {
+                                                    return __awaiter(_this, void 0, void 0, function () {
                                                         var _a;
                                                         return __generator(this, function (_b) {
                                                             switch (_b.label) {
@@ -1421,15 +1430,18 @@ define("renderer", ["require", "exports", "parser", "index", "highlight.js"], fu
                                                                 case 1: return [2 /*return*/, _a + (_b.sent()) + '</td>'];
                                                             }
                                                         });
-                                                    }); }))];
+                                                    });
+                                                }))];
                                             case 1: return [2 /*return*/, _a + (_b.sent()).join('') + '</tr>'];
                                         }
                                     });
-                                }); }))];
+                                });
+                            }))];
                         case 66: return [2 /*return*/, _5 + (_8.sent()).join('') + '</tbody></table>'];
                         case 67:
                             _6 = '<ul class="wiki-list">';
-                            return [4 /*yield*/, Promise.all(node.items.map(function (item) { return __awaiter(_this, void 0, void 0, function () {
+                            return [4 /*yield*/, Promise.all(node.items.map(function (item) {
+                                return __awaiter(_this, void 0, void 0, function () {
                                     var _a, _b;
                                     return __generator(this, function (_c) {
                                         switch (_c.label) {
@@ -1447,7 +1459,8 @@ define("renderer", ["require", "exports", "parser", "index", "highlight.js"], fu
                                             case 3: return [2 /*return*/, _c.sent()];
                                         }
                                     });
-                                }); }))];
+                                });
+                            }))];
                         case 68: return [2 /*return*/, _6 + (_8.sent()).join('') + '</ul>'];
                         case 69:
                             {
@@ -1491,7 +1504,7 @@ define("renderer", ["require", "exports", "parser", "index", "highlight.js"], fu
     }());
     exports.Renderer = Renderer;
 });
-define("index", ["require", "exports", "tokenizer", "parser", "renderer"], function (require, exports, tokenizer_1, parser_2, renderer_1) {
+definefunc("index", ["require", "exports", "tokenizer", "parser", "renderer"], function (require, exports, tokenizer_1, parser_2, renderer_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.parser = exports.tokenizer = exports.Node = exports.Token = exports.Renderer = exports.Parser = exports.Tokenizer = void 0;
