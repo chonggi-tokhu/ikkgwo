@@ -108,9 +108,11 @@
                     // Do things with result
                     //console.log(result);
                     var template = '<div class="body"> <div class="wiki-content"> <h2>@@docname@@</h2> <div class="document">@@doc@@</div> </div>  </div>';
-                    var template1 = template.replace('@@docname@@', query0);
-                    template1 = template1.replace('@@doc@@',await namumark.renderer.run(namumark.parse(result,null,'    ')));
-                    document.querySelector('.body_0').innerHTML = template1;
+                    return {res:result,temp:template};
+                }).then((res0)=>{
+                    namumark.renderer.run(namumark.parse(res0.res,null,'    ')).then((data2)=>{
+                        document.querySelector('.body_0').innerHTML = res0.temp.replace('@@docname@@', data2);
+                    });
                 });
         })();
     </script>
