@@ -1214,4 +1214,4 @@ var parser = new Parser();
 function parse(str) {
     return parser.run(tokenizer.run(str));
 }
-(function (gTh, CGRshorter) { "object" == typeof exports && "undefined" != typeof module ? module.exports = CGRshorter() : "function" == typeof define && define.amd ? define(CGRshorter) : (gTh = "undefined" != typeof globalThis ? globalThis : gTh || self).namumark = CGRshorter() })(this, function(){return parse});
+(function (gTh, CGRshorter) { "object" == typeof exports && "undefined" != typeof module ? module.exports = CGRshorter() : "function" == typeof define && define.amd ? define(CGRshorter) : (gTh = "undefined" != typeof globalThis ? globalThis : gTh || self).namumark = CGRshorter() })(this, function(){return {parse: parse,renderer:new Renderer(),}});
